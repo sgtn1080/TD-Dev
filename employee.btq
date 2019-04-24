@@ -1,0 +1,19 @@
+drop table sysdba.employee_bkup;
+
+CREATE TABLE sysdba.employee_bkup (
+      EmployeeNo INTEGER,
+      FirstName CHAR(30),
+      LastName CHAR(30),
+      DepartmentNo SMALLINT,
+      NetPay INTEGER
+   )
+   Unique Primary Index(EmployeeNo);
+
+   .IF ERRORCODE <> 0 THEN .EXIT ERRORCODE;
+
+   SELECT * FROM
+   sysdba.Employee_bkup
+   Sample 1;
+
+.IF ERRORCODE <> 0 THEN .EXIT ERRORCODE;
+.LOGOFF;
