@@ -1,3 +1,0 @@
-.logon 146.35.144.174/sysdba,DevTD20*$&19;
-.RUN FILE = "/home/cvxadmin/scripts/employee.btq";
-.logoff;
